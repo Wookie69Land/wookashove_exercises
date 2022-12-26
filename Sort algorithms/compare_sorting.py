@@ -13,7 +13,7 @@ def check_how_fast(function, element):
 
 if __name__ == "__main__":
 
-    array = [randint(1, 1000) for i in range(1000)]
+    array = [randint(1, 1000) for i in range(randint(64, 128))]
 
     print(f'Unsorted list: {array}')
 
