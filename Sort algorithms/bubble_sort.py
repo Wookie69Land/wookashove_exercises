@@ -5,15 +5,16 @@ def bubbleSort(array_of_nr):
 
     n = len(array_of_nr) - 1
     swapped = False
+
     for i in range(n):
         for j in range(0, n-i):
 
             if array_of_nr[j] > array_of_nr[j+1]:
-                swapped = True
                 array_of_nr[j], array_of_nr[j+1] = array_of_nr[j+1], array_of_nr[j]
+                swapped = True
 
-            if not swapped:
-                return array_of_nr
+        if not swapped:
+            break
 
 
 if __name__ == "__main__":
