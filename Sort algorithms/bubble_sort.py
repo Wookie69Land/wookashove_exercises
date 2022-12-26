@@ -14,7 +14,7 @@ def bubbleSort(array_of_nr):
                 swapped = True
 
         if not swapped:
-            break
+            return array_of_nr
 
 
 if __name__ == "__main__":
