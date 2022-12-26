@@ -3,6 +3,12 @@ from random import randint
 
 def mergeSort(list1, list2):
 
+    if len(list1) == 0:
+        return list2
+
+    if len(list2) == 0:
+        return list1
+
     result = []
     index_1 = index_2 = 0
 
