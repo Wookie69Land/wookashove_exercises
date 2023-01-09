@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guessing game</title>
+</head>
+<body>
+    <label>
+        <h2> Think about number from 1 to 1000 and I will guess it in max 10 turns.</h2>
+    </label><br>
+    <form method="POST">
+            <label>My guess:{{ guess }}</label><br>
+            <fieldset>
+                <button type="submit" name="answer" value="low"> Too low! </button>
+                <button type="submit" name="answer" value="high"> Too high! </button>
+                <button type="submit" name="answer" value="hit"> Well done! </button>
+            </fieldset><br>
+            <p>
+                <input type="hidden" name = 'max' value="{{max}}">
+                <input type="hidden" name = 'min' value="{{min}}">
+            </p>
+        </form>
+    <h2> {{ result }} </h2>
+</body>
+</html>

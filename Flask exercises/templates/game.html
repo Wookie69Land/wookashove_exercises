@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2001 game</title>
+</head>
+<body>
+        <form method="post">
+            <h2> Pick the dices: </h2><br>
+            <fieldset> Dice 1
+            <select name="dice1">
+                <option value="3">D3</option>
+                <option value="4">D4</option>
+                <option value="6">D6</option>
+                <option value="8">D8</option>
+                <option value="10">D10</option>
+                <option value="12">D12</option>
+                <option value="20">D20</option>
+                <option value="100">D100</option>
+            </select>
+            </fieldset><br>
+            <fieldset> Dice 2
+            <select name="dice2">
+                <option value="3">D3</option>
+                <option value="4">D4</option>
+                <option value="6">D6</option>
+                <option value="8">D8</option>
+                <option value="10">D10</option>
+                <option value="12">D12</option>
+                <option value="20">D20</option>
+                <option value="100">D100</option>
+            </select>
+            </fieldset><br>
+            <p>
+                <input type="hidden" name = 'sum_1' value="{{sum_1}}">
+                <input type="hidden" name = 'sum_2' value="{{sum_2}}">
+            </p>
+            <input type="submit" value="throw">
+        </form>
+    <h2> {{result}} </h2>
+    <h2> Your score: {{ sum_1 }}, computer score: {{ sum_2 }}</h2>
+</body>
+</html>
